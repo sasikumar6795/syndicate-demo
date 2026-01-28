@@ -13,7 +13,7 @@ import java.util.Map;
 	roleName = "hello_world-role",
 	isPublishVersion = true,
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED,
-        aliasName = "learn"
+    aliasName = "${lambdas_alias_name}"
 )
 public class HelloWorld implements RequestHandler<Object, Map<String, Object>> {
 
